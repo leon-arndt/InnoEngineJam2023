@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfc33xx60m37f"]
+[gd_scene load_steps=5 format=3 uid="uid://bfc33xx60m37f"]
 
 [ext_resource type="Texture2D" uid="uid://chsyjnpg1tgic" path="res://sprites/heart.png" id="1_m2557"]
 [ext_resource type="Script" path="res://scripts/Timer.gd" id="2_hbkjf"]
 [ext_resource type="Script" path="res://scenes/RestartButton.gd" id="3_stth6"]
+[ext_resource type="Script" path="res://scripts/WinButton.gd" id="4_wmiqc"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -97,4 +98,52 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Retry"
 script = ExtResource("3_stth6")
+parentNode = NodePath("..")
+
+[node name="WinPanel" type="Panel" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -117.0
+offset_right = 218.0
+offset_bottom = 183.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.916, 1)
+pivot_offset = Vector2(200, 150)
+size_flags_stretch_ratio = 9.28
+
+[node name="WinText" type="Label" parent="CanvasLayer/WinPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.104391
+offset_top = -69.0
+offset_right = 0.104401
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "You Win"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/WinPanel" node_paths=PackedStringArray("parentNode")]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 54.9061
+offset_top = 152.0
+offset_right = -45.0939
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play Again"
+script = ExtResource("4_wmiqc")
 parentNode = NodePath("..")

@@ -1,5 +1,7 @@
 extends Area3D
 
+signal win
+
 func _ready():
 	pass
 
@@ -13,3 +15,4 @@ func _on_body_entered(body : Node3D):
 
 func finish_level():
 	print("you win!")
+	emit_signal("win")
