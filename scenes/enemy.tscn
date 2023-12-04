@@ -1,8 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctrk6faotktvh"]
+[gd_scene load_steps=9 format=3 uid="uid://cjyt4744cedcq"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_76enq"]
+[ext_resource type="ArrayMesh" uid="uid://jcral87fgswi" path="res://Asset/Enemy.obj" id="2_vyx7u"]
+[ext_resource type="ArrayMesh" uid="uid://ckn0x46i58tks" path="res://Asset/Enemy__Angry.obj" id="3_e0rp4"]
+[ext_resource type="ArrayMesh" uid="uid://c5i8wceqy0eod" path="res://Asset/Enemy__Sword.obj" id="4_h8ela"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_y3st8"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1glk"]
+albedo_color = Color(0.811765, 0.505882, 0.352941, 1)
+metallic = 0.5
+roughness = 0.4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o3ia6"]
+albedo_color = Color(0.67451, 0.0470588, 0.0823529, 1)
+emission_enabled = true
+emission = Color(0.890196, 0, 0.215686, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jdpdt"]
+albedo_color = Color(0.701961, 0.462745, 0.337255, 1)
+metallic = 0.55
+roughness = 0.4
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_51xil"]
 
@@ -10,12 +26,26 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 script = ExtResource("1_76enq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_y3st8")
+[node name="Enemy" type="CSGCombiner3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="Body" type="CSGMesh3D" parent="Enemy"]
+transform = Transform3D(0.597391, 0, -0.00572429, 0, 0.597419, 0, 0.00572429, 0, 0.597391, 0.00551119, -0.473822, 0.0563883)
+mesh = ExtResource("2_vyx7u")
+material = SubResource("StandardMaterial3D_e1glk")
+
+[node name="Eyes" type="CSGMesh3D" parent="Enemy"]
+transform = Transform3D(0.597391, 0, -0.00572429, 0, 0.597419, 0, 0.00572429, 0, 0.597391, 0.00551119, -0.473822, 0.0563883)
+mesh = ExtResource("3_e0rp4")
+material = SubResource("StandardMaterial3D_o3ia6")
+
+[node name="Sword" type="CSGMesh3D" parent="Enemy"]
+transform = Transform3D(0.597392, -0.00401827, -0.00402467, 2.23603e-05, 0.42443, -0.420438, 0.00568717, 0.420418, 0.424411, -0.904319, 0.626864, 0.0476702)
+mesh = ExtResource("4_h8ela")
+material = SubResource("StandardMaterial3D_jdpdt")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1.4399, 0, 0, 0, 1.4399, 0, 0, 0, 1.4399, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_51xil")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
