@@ -11,3 +11,5 @@
 [node name="PlayerAndCamera" parent="." instance=ExtResource("2_ye1pi")]
 
 [node name="Node3D" parent="." instance=ExtResource("3_as83t")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
