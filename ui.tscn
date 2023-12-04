@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bl4rhhwtu6g10"]
+[gd_scene load_steps=3 format=3 uid="uid://bl4rhhwtu6g10"]
 
 [ext_resource type="Texture2D" uid="uid://chsyjnpg1tgic" path="res://sprites/heart.png" id="1_m2557"]
+[ext_resource type="Script" path="res://scripts/Timer.gd" id="2_hbkjf"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -26,3 +27,21 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_m2557")
 expand_mode = 2
 stretch_mode = 1
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("2_hbkjf")
+
+[node name="SecondsLeft" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
