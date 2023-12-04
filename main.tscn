@@ -6,7 +6,7 @@
 
 [node name="Node" type="Node"]
 
-[node name="Control" parent="." instance=ExtResource("1_en1kt")]
+[node name="UI" parent="." instance=ExtResource("1_en1kt")]
 
 [node name="PlayerAndCamera" parent="." instance=ExtResource("2_ye1pi")]
 
