@@ -18,6 +18,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(4, 4)
 
 [node name="Hearts" type="TextureRect" parent="CanvasLayer/Control"]
 layout_mode = 0
@@ -36,6 +37,7 @@ offset_left = -20.0
 offset_right = 20.0
 offset_bottom = 40.0
 grow_horizontal = 2
+scale = Vector2(4, 4)
 script = ExtResource("2_hbkjf")
 
 [node name="SecondsLeft" type="Label" parent="CanvasLayer/Panel"]
