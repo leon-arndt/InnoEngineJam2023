@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ckn0x46i58tks"
+path="res://.godot/imported/Enemy__Angry.obj-2e2cddd4457804e8de7fb3840d7fb4c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Enemy__Angry.obj-2e2cddd4457804e8de7fb3840d7fb4c2.mesh"]
+
+source_file="res://Asset/Enemy__Angry.obj"
+dest_files=["res://.godot/imported/Enemy__Angry.obj-2e2cddd4457804e8de7fb3840d7fb4c2.mesh", "res://.godot/imported/Enemy__Angry.obj-2e2cddd4457804e8de7fb3840d7fb4c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
