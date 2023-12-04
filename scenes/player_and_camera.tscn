@@ -23,6 +23,7 @@ use_collision = true
 shape = SubResource("SphereShape3D_i4vyp")
 
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("camera_target")]
-transform = Transform3D(1, 0, 0, 0, 0.883627, 0.468192, 0, -0.468192, 0.883627, 0.306936, 4.42407, 3.79149)
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 10, 10, 10)
 script = ExtResource("2_vx0lq")
 camera_target = NodePath("../Player")
+camera_offset = Vector3(10, 10.5, 10)

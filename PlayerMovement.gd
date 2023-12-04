@@ -13,5 +13,5 @@ func _process(delta):
 	var left = Input.get_action_strength("move_left")
 	var right = Input.get_action_strength("move_right")
 	var direction = Vector3(left-right, 0, forward-backward)
-	direction = Quaternion.from_euler(Vector3(0,45,0)) * direction
+	direction = Quaternion.from_euler(Vector3(0,180,0)) * direction
 	apply_central_force(direction * 800 * delta)
