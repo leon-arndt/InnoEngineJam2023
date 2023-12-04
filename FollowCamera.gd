@@ -1,11 +1,6 @@
 extends Camera3D
 
-var camera_target
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	camera_target = get_node("/root/Node3D/Player")
-
+@export var camera_target: Node
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
