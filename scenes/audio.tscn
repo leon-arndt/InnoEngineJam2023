@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://77eo2kam6cw4"]
+
+[ext_resource type="AudioStream" uid="uid://biahf1d7mqnwg" path="res://audio/Favorite.mp3" id="1_sl2oa"]
+
+[node name="Audio" type="Node"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_sl2oa")
+autoplay = true
+stream_paused = true
