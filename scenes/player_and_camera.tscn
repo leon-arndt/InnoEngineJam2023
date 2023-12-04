@@ -1,10 +1,81 @@
-[gd_scene load_steps=5 format=3 uid="uid://bf3ycxp5q04g"]
+[gd_scene load_steps=17 format=3 uid="uid://bf3ycxp5q04g"]
 
 [ext_resource type="Script" path="res://PlayerMovement.gd" id="1_ns86o"]
+[ext_resource type="ArrayMesh" uid="uid://ddb2hhegmyp2t" path="res://Asset/MainCharacter.obj" id="2_0dgy7"]
 [ext_resource type="Script" path="res://FollowCamera.gd" id="2_vx0lq"]
+[ext_resource type="ArrayMesh" uid="uid://lrfr356geawg" path="res://Asset/MainCharacter__Eye.obj" id="3_4oa4s"]
+[ext_resource type="ArrayMesh" uid="uid://bigwbii4u514p" path="res://Asset/MainCharacter__Gear.obj" id="4_820cu"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ccvko"]
-albedo_color = Color(0.827451, 0, 0.00392157, 1)
+[sub_resource type="Gradient" id="Gradient_btqsp"]
+offsets = PackedFloat32Array(0, 0.00220752, 1)
+colors = PackedColorArray(0.131105, 0.222755, 0.36736, 1, 0.142745, 0.228232, 0.373709, 1, 0.884433, 0.577168, 0.778275, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_c7xgv"]
+gradient = SubResource("Gradient_btqsp")
+fill_from = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7ogi"]
+albedo_texture = SubResource("GradientTexture2D_c7xgv")
+
+[sub_resource type="Gradient" id="Gradient_6l08r"]
+colors = PackedColorArray(0.256319, 0.119358, 0.399401, 1, 1, 0.600263, 0.598267, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ivjk1"]
+gradient = SubResource("Gradient_6l08r")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ehj17"]
+albedo_color = Color(0.85098, 0.8, 0.627451, 1)
+albedo_texture = SubResource("GradientTexture2D_ivjk1")
+metallic = 0.3
+metallic_specular = 0.27
+roughness = 0.51
+emission_enabled = true
+emission = Color(0.698039, 0.427451, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rw30x"]
+albedo_color = Color(0.419608, 0.803922, 0.823529, 1)
+metallic = 0.4
+emission_enabled = true
+emission = Color(0, 0.721569, 0.733333, 1)
+
+[sub_resource type="Animation" id="Animation_8s2lg"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_kjpqe"]
+resource_name = "new_animation"
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(6.28319, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../MainCharacter__Gear2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -3.14159, 0), Vector3(6.28319, -3.14159, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xmgmj"]
+_data = {
+"RESET": SubResource("Animation_8s2lg"),
+"new_animation": SubResource("Animation_kjpqe")
+}
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_i4vyp"]
 
@@ -15,9 +86,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 linear_damp = 1.0
 script = ExtResource("1_ns86o")
 
-[node name="CSGSphere3D" type="CSGSphere3D" parent="Player"]
-material_override = SubResource("StandardMaterial3D_ccvko")
-use_collision = true
+[node name="MainCharacter" type="CSGCombiner3D" parent="Player"]
+transform = Transform3D(0.377625, 0, 0, 0, 0.377625, 0, 0, 0, 0.377625, 0, -0.000278652, 0)
+
+[node name="MainCharacter__Base" type="CSGMesh3D" parent="Player/MainCharacter"]
+mesh = ExtResource("2_0dgy7")
+material = SubResource("StandardMaterial3D_l7ogi")
+
+[node name="MainCharacter__Eye" type="CSGMesh3D" parent="Player/MainCharacter"]
+mesh = ExtResource("3_4oa4s")
+material = SubResource("StandardMaterial3D_ehj17")
+
+[node name="MainCharacter__Gear" type="CSGMesh3D" parent="Player/MainCharacter"]
+transform = Transform3D(0.999998, 0.00170843, -0.00100533, -0.0017066, 0.999997, 0.00181586, 0.00100843, -0.00181414, 0.999998, 1.24113, 0.00396562, -0.0026294)
+mesh = ExtResource("4_820cu")
+material = SubResource("StandardMaterial3D_rw30x")
+
+[node name="MainCharacter__Gear2" type="CSGMesh3D" parent="Player/MainCharacter"]
+transform = Transform3D(-1, 1.52855e-14, 8.74228e-08, 0, 1, -1.74846e-07, -8.74228e-08, -1.74846e-07, -1, -1.19209, 0.00396562, -0.0026294)
+mesh = ExtResource("4_820cu")
+
+[node name="Spin" type="AnimationPlayer" parent="Player/MainCharacter"]
+root_node = NodePath("../MainCharacter__Gear")
+libraries = {
+"": SubResource("AnimationLibrary_xmgmj")
+}
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("SphereShape3D_i4vyp")
