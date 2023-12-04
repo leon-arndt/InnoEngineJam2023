@@ -19,6 +19,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0509, 2.68835, -9.58199)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.917481, 0.139438, 0.372541, -0.341704, 0.755724, 0.558677, -0.203637, -0.639873, 0.741009, 0, 0, 0)
+light_color = Color(1, 0.662745, 0.32549, 1)
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 82.86
+shadow_bias = 9.801
+shadow_blur = 10.0
 
 [node name="Enemy" parent="." instance=ExtResource("4_mh3x5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.4361, 0.918661, 3.30574)
