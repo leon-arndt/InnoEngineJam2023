@@ -7,10 +7,11 @@ const RAY_LENGTH = 20000
 @export var camera : Camera3D
 @export var offset : Vector3
 
+var bullet : PackedScene
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED # should be moved to main class
-	pass
+	bullet = preload("res://scenes/bullet.tscn")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -19,7 +20,7 @@ func _process(delta):
 
 
 func _input(event):
-	if (event is InputEventMouseMotion):
+	if (event is InputEventMouseMotion || event is InputEventMouseButton):
 		var mousepos = get_viewport().get_mouse_position()
 		var ballpos = player.global_position
 		
@@ -31,16 +32,13 @@ func _input(event):
 		var result = space_state.intersect_ray(query)
 		if result.has("position"): # if we hit something
 			var hit_pos = result.position
-			var direction = ballpos - hit_pos
-			print(result)
+			var direction = hit_pos + Vector3(0, 1, 0) - ballpos
 			look_at(hit_pos)
-
-		#shoot(direction)
+			if (event is InputEventMouseButton):
+				shoot(direction)
 
 func shoot(dir: Vector3):
-	#var space : PhysicsDirectSpaceState3D = get_world_3d().direct_space_state
-	#var query = PhysicsRayQueryParameters3D.create(position, at)
-	#var collision = space.intersect_ray(query)
-	#if collision:
-		#print(collision.collider.name)
-	print("foo")
+	var instance = bullet.instantiate() as RigidBody3D
+	instance.global_position = player.global_position
+	instance.linear_velocity = dir
+	get_tree().root.add_child(instance)

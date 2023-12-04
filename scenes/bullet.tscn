@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnejvpj4kiwcw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_bqw0g"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_na4yj"]
+
+[node name="Bullet" type="RigidBody3D"]
+transform = Transform3D(0.0010119, 0.00164724, 0.999998, 0.999999, -0.000391169, -0.00101126, 0.000389503, 0.999999, -0.00164763, 0, 0, -0.916563)
+collision_layer = 2
+collision_mask = 0
+mass = 0.01
+gravity_scale = 0.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_bqw0g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.3, 0, 2.29534e-11, 0, 0.3, 0, -2.29534e-11, 0, 0.3, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_na4yj")
