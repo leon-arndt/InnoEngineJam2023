@@ -1,10 +1,11 @@
 extends Button
 
+@export var parentNode : Node
 @export var playerNode : Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	visible = false
+	parentNode.visible = false
 	playerNode.connect("health_depleted", _on_health_depleted)
 	pressed.connect(_on_button_down)
 
@@ -14,7 +15,7 @@ func _process(delta):
 	pass
 
 func _on_health_depleted():
-	visible = true
+	parentNode.visible = true
 	pass
 
 func _on_button_down():
