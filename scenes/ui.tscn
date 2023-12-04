@@ -14,6 +14,7 @@ grow_vertical = 2
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" type="Control" parent="CanvasLayer"]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -30,6 +31,7 @@ expand_mode = 2
 stretch_mode = 1
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
+texture_filter = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
