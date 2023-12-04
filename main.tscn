@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c33bvptmj66cj"]
+[gd_scene load_steps=9 format=3 uid="uid://c33bvptmj66cj"]
 
 [ext_resource type="Script" path="res://scripts/enemy_movement.gd" id="1_blfbj"]
 [ext_resource type="PackedScene" uid="uid://bl4rhhwtu6g10" path="res://scenes/ui.tscn" id="1_en1kt"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c1cca74de7033" path="res://PrototypeLevelScene/PrototypeLevel.tscn" id="3_as83t"]
 [ext_resource type="PackedScene" uid="uid://ctrk6faotktvh" path="res://scenes/enemy.tscn" id="4_mh3x5"]
 [ext_resource type="PackedScene" uid="uid://77eo2kam6cw4" path="res://scenes/audio.tscn" id="6_hkl6x"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://joystick/virtual_joystick.tscn" id="7_q6uog"]
 [ext_resource type="PackedScene" uid="uid://k23r5wfgpdxb" path="res://scenes/world_environment.tscn" id="7_qtohe"]
 
 [node name="Node" type="Node"]
@@ -13,8 +14,8 @@ script = ExtResource("1_blfbj")
 
 [node name="UI" parent="." instance=ExtResource("1_en1kt")]
 
-[node name="Button" parent="UI/CanvasLayer" index="2" node_paths=PackedStringArray("playerNode")]
-playerNode = NodePath("../../../PlayerAndCamera/Player")
+[node name="Button" parent="UI/CanvasLayer/Panel2" index="1" node_paths=PackedStringArray("playerNode")]
+playerNode = NodePath("../../../../PlayerAndCamera/Player")
 
 [node name="PlayerAndCamera" parent="." instance=ExtResource("2_ye1pi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0509, 2.68835, -9.58199)
@@ -43,6 +44,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.4361, 0.918661, 3.30574)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4962, 0.918661, 24.2783)
 
 [node name="Audio" parent="." instance=ExtResource("6_hkl6x")]
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("7_q6uog")]
+offset_left = 1.0
+offset_right = 301.0
+joystick_mode = 1
+action_left = "move_left"
+action_right = "move_right"
+action_up = "move_forward"
+action_down = "move_backward"
 
 [node name="WorldEnvironment" parent="." instance=ExtResource("7_qtohe")]
 
