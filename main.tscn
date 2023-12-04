@@ -1,13 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://c33bvptmj66cj"]
+[gd_scene load_steps=12 format=3 uid="uid://c33bvptmj66cj"]
 
 [ext_resource type="Script" path="res://scripts/enemy_movement.gd" id="1_blfbj"]
-[ext_resource type="PackedScene" path="res://scenes/ui.tscn" id="1_en1kt"]
+[ext_resource type="PackedScene" uid="uid://bfc33xx60m37f" path="res://scenes/ui.tscn" id="1_en1kt"]
 [ext_resource type="PackedScene" uid="uid://bf3ycxp5q04g" path="res://scenes/player_and_camera.tscn" id="2_ye1pi"]
 [ext_resource type="PackedScene" uid="uid://c1cca74de7033" path="res://PrototypeLevelScene/PrototypeLevel.tscn" id="3_as83t"]
-[ext_resource type="PackedScene" uid="uid://ctrk6faotktvh" path="res://scenes/enemy.tscn" id="4_mh3x5"]
-[ext_resource type="PackedScene" uid="uid://77eo2kam6cw4" path="res://scenes/audio.tscn" id="6_hkl6x"]
+[ext_resource type="PackedScene" uid="uid://cejuo8cqs7pdj" path="res://scenes/enemy.tscn" id="4_mh3x5"]
+[ext_resource type="PackedScene" path="res://scenes/audio.tscn" id="6_hkl6x"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://joystick/virtual_joystick.tscn" id="7_q6uog"]
-[ext_resource type="PackedScene" uid="uid://k23r5wfgpdxb" path="res://scenes/world_environment.tscn" id="7_qtohe"]
+[ext_resource type="PackedScene" path="res://scenes/world_environment.tscn" id="7_qtohe"]
+[ext_resource type="ArrayMesh" uid="uid://bty4osmhn1m5q" path="res://Asset/Environment/Gear-01.obj" id="9_6d6ta"]
+[ext_resource type="Material" path="res://Asset/Material/Gears.tres" id="10_k3eqc"]
+[ext_resource type="Script" path="res://rotateMe.gd" id="11_qtgxd"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_blfbj")
@@ -20,8 +23,10 @@ playerNode = NodePath("../../../../PlayerAndCamera/Player")
 [node name="PlayerAndCamera" parent="." instance=ExtResource("2_ye1pi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0509, 2.68835, -9.58199)
 
-[node name="MainCharacter__Gear" parent="PlayerAndCamera/Player/MainCharacter" index="2"]
-transform = Transform3D(0.999998, 0.00170843, -0.00100533, -0.0017066, 0.999997, 0.00181586, 0.00100843, -0.00181414, 0.999998, 1.24113, 0.00396562, -0.0026294)
+[node name="Player" parent="PlayerAndCamera" index="0"]
+can_sleep = false
+max_contacts_reported = 1
+contact_monitor = true
 
 [node name="MainCharacter__Gear2" parent="PlayerAndCamera/Player/MainCharacter" index="3"]
 transform = Transform3D(-1.5232, -4.03647e-07, -3.84045e-06, 0, 1.51486, -0.159218, 3.86159e-06, -0.159218, -1.51486, -1.26414, 0.00396562, -0.0026294)
@@ -55,6 +60,24 @@ action_up = "move_forward"
 action_down = "move_backward"
 
 [node name="WorldEnvironment" parent="." instance=ExtResource("7_qtohe")]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(2.7896e-15, -2.39801e-07, -1.46, -1.46, -2.39801e-07, 0, -6.38186e-08, 5.486, -6.38186e-08, 15.002, -0.573892, -6.34521)
+use_collision = true
+mesh = ExtResource("9_6d6ta")
+material = ExtResource("10_k3eqc")
+script = ExtResource("11_qtgxd")
+axis = Vector3(0, 0, 1)
+speed = -1.0
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
+transform = Transform3D(-4.37114e-08, 3.758, 0, -1, -1.64267e-07, 0, 0, 0, 1, 43.2372, -1.34079, -8.22408)
+use_collision = true
+mesh = ExtResource("9_6d6ta")
+material = ExtResource("10_k3eqc")
+script = ExtResource("11_qtgxd")
+axis = Vector3(1, 0, 0)
+speed = -0.5
 
 [editable path="UI"]
 [editable path="PlayerAndCamera"]
