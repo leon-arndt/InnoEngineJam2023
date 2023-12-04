@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://bf3ycxp5q04g"]
+[gd_scene load_steps=18 format=3 uid="uid://bf3ycxp5q04g"]
 
 [ext_resource type="Script" path="res://PlayerMovement.gd" id="1_ns86o"]
 [ext_resource type="ArrayMesh" uid="uid://ddb2hhegmyp2t" path="res://Asset/MainCharacter.obj" id="2_0dgy7"]
+[ext_resource type="PackedScene" uid="uid://chnx54mms6hub" path="res://scenes/weapon.tscn" id="2_bwdpm"]
 [ext_resource type="Script" path="res://FollowCamera.gd" id="2_vx0lq"]
 [ext_resource type="ArrayMesh" uid="uid://lrfr356geawg" path="res://Asset/MainCharacter__Eye.obj" id="3_4oa4s"]
 [ext_resource type="ArrayMesh" uid="uid://bigwbii4u514p" path="res://Asset/MainCharacter__Gear.obj" id="4_820cu"]
@@ -117,6 +118,12 @@ shape = SubResource("SphereShape3D_i4vyp")
 
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("camera_target")]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 10, 10, 10)
+current = true
 script = ExtResource("2_vx0lq")
 camera_target = NodePath("../Player")
 camera_offset = Vector3(10, 10, 10)
+
+[node name="Weapon" parent="." node_paths=PackedStringArray("player", "camera") instance=ExtResource("2_bwdpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.474264, 0.972998)
+player = NodePath("../Player")
+camera = NodePath("../Camera3D")

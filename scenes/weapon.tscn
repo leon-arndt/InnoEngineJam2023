@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://chnx54mms6hub"]
+
+[ext_resource type="Script" path="res://scripts/weapon.gd" id="1_wrcj7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h6s02"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3mqbm"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3qcjw"]
+
+[node name="Weapon" type="Node3D"]
+script = ExtResource("1_wrcj7")
+offset = Vector3(1, 0, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_h6s02")
+
+[node name="Bullet" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.000308631, 0.000502408, 0.304999, 0.305, -0.000119307, -0.000308435, 0.000118798, 0.305, -0.000502528, 0, 0, -0.916563)
+mesh = SubResource("CapsuleMesh_3mqbm")
+
+[node name="Area3D" type="Area3D" parent="Bullet"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bullet/Area3D"]
+shape = SubResource("CapsuleShape3D_3qcjw")
