@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1cca74de7033"]
+[gd_scene load_steps=8 format=3 uid="uid://c1cca74de7033"]
 
 [ext_resource type="Material" uid="uid://dgqxbgr3565at" path="res://Asset/Material/BasicGrass.tres" id="2_rjm8n"]
 [ext_resource type="ArrayMesh" uid="uid://c2qvfpqr1ar8a" path="res://Asset/Environment/Gear.obj" id="3_2rwoa"]
 [ext_resource type="ArrayMesh" uid="uid://dmf85tpbmdbtm" path="res://Asset/Ramp.obj" id="3_116v1"]
 [ext_resource type="ArrayMesh" uid="uid://bty4osmhn1m5q" path="res://Asset/Environment/Gear-01.obj" id="4_jjcok"]
+[ext_resource type="Material" uid="uid://dpxq7h1n5wrwh" path="res://Asset/Material/Gears.tres" id="4_nq11s"]
 [ext_resource type="ArrayMesh" uid="uid://bsunw5elfjqbe" path="res://Asset/Environment/Gear-02.obj" id="5_25mor"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_53l04"]
@@ -112,11 +113,8 @@ size = Vector3(18.2451, 4.65726, 15.6664)
 [node name="CSGBox3D16" type="CSGBox3D" parent="NavigationRegion3D/PrototypePlatform"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35987, -1.87024, -5.17958)
 material_override = ExtResource("2_rjm8n")
-size = Vector3(14.5219, 3.80469, 15.8686)
-
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="NavigationRegion3D/PrototypePlatform"]
-material_override = ExtResource("2_rjm8n")
 use_collision = true
+size = Vector3(14.5219, 3.80469, 15.8686)
 
 [node name="Ramp" type="CSGMesh3D" parent="NavigationRegion3D/PrototypePlatform"]
 transform = Transform3D(1, 0, 0, 0, 0.822886, 0, 0, 0, 2.20941, -6.15697, 1.00537, -5.42524)
@@ -175,13 +173,16 @@ material = ExtResource("2_rjm8n")
 [node name="Backgronund" type="Node" parent="."]
 
 [node name="Gear" type="CSGMesh3D" parent="Backgronund"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.7812, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.377888, 11.7812, -15.0414)
 mesh = ExtResource("3_2rwoa")
+material = ExtResource("4_nq11s")
 
 [node name="Gear-01" type="CSGMesh3D" parent="Backgronund"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.4891, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.438976, 13.4891, -19.7097)
 mesh = ExtResource("4_jjcok")
+material = ExtResource("4_nq11s")
 
 [node name="Gear-02" type="CSGMesh3D" parent="Backgronund"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.9756, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.438976, 9.9756, -14.6036)
 mesh = ExtResource("5_25mor")
+material = ExtResource("4_nq11s")

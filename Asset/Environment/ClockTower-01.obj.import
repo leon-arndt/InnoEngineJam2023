@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvkpdjjrqwnq5"
+path="res://.godot/imported/ClockTower-01.obj-8c3e2f08db465e348d7a1706aafb4908.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ClockTower-01.obj-8c3e2f08db465e348d7a1706aafb4908.mesh"]
+
+source_file="res://Asset/Environment/ClockTower-01.obj"
+dest_files=["res://.godot/imported/ClockTower-01.obj-8c3e2f08db465e348d7a1706aafb4908.mesh", "res://.godot/imported/ClockTower-01.obj-8c3e2f08db465e348d7a1706aafb4908.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
