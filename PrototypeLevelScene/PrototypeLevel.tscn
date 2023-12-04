@@ -1,0 +1,167 @@
+[gd_scene load_steps=8 format=3 uid="uid://c1cca74de7033"]
+
+[ext_resource type="ArrayMesh" uid="uid://cumk2yqfn0g87" path="res://Asset/TestCube.obj" id="1_g01g0"]
+[ext_resource type="Material" uid="uid://dgqxbgr3565at" path="res://Asset/Material/BasicGrass.tres" id="2_rjm8n"]
+[ext_resource type="ArrayMesh" uid="uid://dmf85tpbmdbtm" path="res://Asset/Ramp.obj" id="3_116v1"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_7b0ga"]
+albedo_color = Color(0.980392, 0.627451, 0.290196, 1)
+emission_enabled = true
+emission = Color(0.964706, 0.666667, 0.72549, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rowit"]
+albedo_color = Color(1, 0.419608, 0.486275, 1)
+metallic = 0.59
+metallic_specular = 0.56
+roughness = 0.56
+
+[sub_resource type="TextMesh" id="TextMesh_d0b1a"]
+material = SubResource("StandardMaterial3D_rowit")
+text = "Entshuldigung
+"
+
+[sub_resource type="TextMesh" id="TextMesh_qqefu"]
+text = "HELLO
+"
+
+[node name="Node3D" type="Node3D"]
+
+[node name="testcube" type="MeshInstance3D" parent="."]
+visible = false
+mesh = ExtResource("1_g01g0")
+
+[node name="PrototypePlatform" type="Node" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.18451, 0.129064, 3.4987)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(5.98792, 1.75146, 22.269)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2352, 0.129064, -2.40788)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(5.98792, 1.75146, 22.269)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.9518, 0.129064, 11.6345)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(5.98792, 1.75146, 26.4597)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.86018, 1.87436, 22.3321)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(12.4669, 5.24207, 8.43301)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.59804, 1.29557, -10.4492)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(11.1326, 2.58154, 5.63852)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.8967, -0.0691812, 1.44781)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(8.60538, 3.92786, 9.09083)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(0.410854, 0, 0, 0, 1, 0, 0, 0, 0.401281, 45.5716, 5.54795, 1.44781)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(8.60538, 11.8384, 9.09083)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 1.11824, 39.0748, -4.17866, -14.1092)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(8.60538, 4.30215, 6.88331)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 0.534011, 45.9752, -11.35, -14.1092)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(8.60538, 4.30215, 6.88331)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 0.534011, 55.9228, -11.35, -10.8646)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(8.60538, 4.30215, 19.0349)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 0.534011, 53.249, -11.35, 5.3823)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(3.0239, 4.30215, 42.8345)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 0.534011, 45.4957, -11.35, 15.1075)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(10.2913, 4.30215, 6.41137)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 0.534011, 36.5188, -6.49711, 18.4843)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(5.02368, 4.30215, 19.0583)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1.17802, 0, 0, 0, 1, 0, 0, 0, 0.534011, 20.3059, -1.66436, 23.922)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(10.421, 4.44978, 13.8351)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="PrototypePlatform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.6805, -2.20055, 1.413)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(18.2451, 4.65726, 15.6664)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="PrototypePlatform"]
+material_override = ExtResource("2_rjm8n")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="PrototypePlatform/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35987, -1.87024, -5.17958)
+material_override = ExtResource("2_rjm8n")
+size = Vector3(14.5219, 3.80469, 15.8686)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="PrototypePlatform/CSGCombiner3D"]
+transform = Transform3D(0.49448, 0, 0, 0, 0.49448, 0, 0, 0, 0.49448, 2.9271, -0.800111, -2.36215)
+material_override = ExtResource("2_rjm8n")
+operation = 2
+snap = 1e-06
+size = Vector3(14.3271, 6.16992, 12.8845)
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-9.98977, 0, -0.452236, 0, 10, 0, 0.452236, 0, -9.98977, 3.88414, 5.63758, 27.7559)
+material_override = SubResource("ORMMaterial3D_7b0ga")
+mesh = SubResource("TextMesh_d0b1a")
+
+[node name="Ramp" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(1, 0, 0, 0, 0.822886, 0, 0, 0, 2.20941, -6.15697, 1.00537, -5.42524)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="Ramp2" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-4.508e-08, 0, 2.27859, 0, 1.32393, 0, -1.03131, 0, -9.96002e-08, 5.25354, 0.0163711, -9.67855)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="Ramp3" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-4.508e-08, 0, 2.27859, 0, 0.966238, 0, -1.03131, 0, -9.96002e-08, 37.4486, 0.0163711, -1.53345)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="Ramp4" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-4.508e-08, 0, 2.27859, 0, 0.966238, 0, -1.03131, 0, -9.96002e-08, 37.4461, 0.0222811, 4.5902)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="Ramp5" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-7.26315e-08, 0, 6.0311, 0, 2.47498, 0, -1.66162, 0, -2.63628e-07, 45.5163, -9.23349, 15.0933)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="Ramp6" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-7.26315e-08, 0, 3.56795, 0, 2.47498, 0, -1.66162, 0, -1.5596e-07, 30.0013, -4.29369, 21.8694)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="Ramp7" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(-7.26315e-08, 0, 5.95496, 0, 2.02964, 0, -1.66162, 0, -2.603e-07, 12.0013, 0.532089, 23.8979)
+mesh = ExtResource("3_116v1")
+material = ExtResource("2_rjm8n")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="PrototypePlatform"]
+transform = Transform3D(24.1954, 0, 6.2916, 0, 25, 0, -6.2916, 0, 24.1954, -4.11366, 4.29209, -11.7231)
+mesh = SubResource("TextMesh_qqefu")
