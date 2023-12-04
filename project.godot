@@ -24,6 +24,10 @@ window/size/viewport_height=1080
 
 project/assembly_name="InnoEngineJam2023"
 
+[gui]
+
+theme/custom_font="res://fonts/evil_empire/Evil Empire.otf"
+
 [input]
 
 move_forward={
