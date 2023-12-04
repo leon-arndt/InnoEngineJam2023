@@ -4,12 +4,12 @@
 [ext_resource type="ArrayMesh" uid="uid://c2qvfpqr1ar8a" path="res://Asset/Environment/Gear.obj" id="3_2rwoa"]
 [ext_resource type="ArrayMesh" uid="uid://dmf85tpbmdbtm" path="res://Asset/Ramp.obj" id="3_116v1"]
 [ext_resource type="ArrayMesh" uid="uid://bty4osmhn1m5q" path="res://Asset/Environment/Gear-01.obj" id="4_jjcok"]
-[ext_resource type="Material" uid="uid://dpxq7h1n5wrwh" path="res://Asset/Material/Gears.tres" id="4_nq11s"]
+[ext_resource type="Material" path="res://Asset/Material/Gears.tres" id="4_nq11s"]
 [ext_resource type="ArrayMesh" uid="uid://bsunw5elfjqbe" path="res://Asset/Environment/Gear-02.obj" id="5_25mor"]
 [ext_resource type="Script" path="res://scripts/LevelFinish.gd" id="7_8em5t"]
 [ext_resource type="ArrayMesh" uid="uid://bk3qxmfwgq02q" path="res://Asset/Environment/Bell.obj" id="7_n6078"]
 [ext_resource type="ArrayMesh" uid="uid://ba0xjuxrfomuj" path="res://Asset/Environment/ClockTower.obj" id="8_j4tb2"]
-[ext_resource type="Material" uid="uid://cs36iu8bnt1il" path="res://Asset/Material/Towers.tres" id="9_o564n"]
+[ext_resource type="Material" path="res://Asset/Material/Towers.tres" id="9_o564n"]
 [ext_resource type="ArrayMesh" uid="uid://dvkpdjjrqwnq5" path="res://Asset/Environment/ClockTower-01.obj" id="10_2w2u0"]
 [ext_resource type="ArrayMesh" uid="uid://bflye3s0k4vdy" path="res://Asset/Environment/Scaffolding.obj" id="11_bykju"]
 [ext_resource type="ArrayMesh" uid="uid://bpujn1cc3rckv" path="res://Asset/Environment/Scaffolding_Stairs.obj" id="12_8ra8b"]
@@ -2090,14 +2090,14 @@ transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.0018
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.02828, 1.73296, 0.339215)
+[node name="LevelFinish" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55944, 4.95961, 23.9558)
 material = SubResource("StandardMaterial3D_nywot")
 
-[node name="Area3D" type="Area3D" parent="CSGBox3D"]
+[node name="LevelFinishArea" type="Area3D" parent="LevelFinish"]
 script = ExtResource("7_8em5t")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LevelFinish/LevelFinishArea"]
 shape = SubResource("BoxShape3D_c548b")
 
-[connection signal="body_entered" from="CSGBox3D/Area3D" to="CSGBox3D/Area3D" method="_on_body_entered"]
+[connection signal="body_entered" from="LevelFinish/LevelFinishArea" to="LevelFinish/LevelFinishArea" method="_on_body_entered"]
