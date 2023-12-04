@@ -1,19 +1,28 @@
 [gd_scene load_steps=7 format=3 uid="uid://c33bvptmj66cj"]
 
 [ext_resource type="Script" path="res://scripts/enemy_movement.gd" id="1_blfbj"]
-[ext_resource type="PackedScene" uid="uid://bl4rhhwtu6g10" path="res://scenes/ui.tscn" id="1_en1kt"]
+[ext_resource type="PackedScene" uid="uid://bfc33xx60m37f" path="res://scenes/ui.tscn" id="1_en1kt"]
 [ext_resource type="PackedScene" uid="uid://bf3ycxp5q04g" path="res://scenes/player_and_camera.tscn" id="2_ye1pi"]
 [ext_resource type="PackedScene" uid="uid://c1cca74de7033" path="res://PrototypeLevelScene/PrototypeLevel.tscn" id="3_as83t"]
-[ext_resource type="PackedScene" uid="uid://ctrk6faotktvh" path="res://scenes/enemy.tscn" id="4_mh3x5"]
-[ext_resource type="PackedScene" uid="uid://77eo2kam6cw4" path="res://scenes/audio.tscn" id="6_hkl6x"]
+[ext_resource type="PackedScene" path="res://scenes/enemy.tscn" id="4_mh3x5"]
+[ext_resource type="PackedScene" path="res://scenes/audio.tscn" id="6_hkl6x"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_blfbj")
 
 [node name="UI" parent="." instance=ExtResource("1_en1kt")]
 
+[node name="Button" parent="UI/CanvasLayer" index="2" node_paths=PackedStringArray("playerNode")]
+playerNode = NodePath("../../../PlayerAndCamera/Player")
+
 [node name="PlayerAndCamera" parent="." instance=ExtResource("2_ye1pi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0509, 2.68835, -9.58199)
+
+[node name="MainCharacter__Gear" parent="PlayerAndCamera/Player/MainCharacter" index="2"]
+transform = Transform3D(0.999998, 0.00170843, -0.00100533, -0.0017066, 0.999997, 0.00181586, 0.00100843, -0.00181414, 0.999998, 1.24113, 0.00396562, -0.0026294)
+
+[node name="MainCharacter__Gear2" parent="PlayerAndCamera/Player/MainCharacter" index="3"]
+transform = Transform3D(-1.5232, -4.03647e-07, -3.84045e-06, 0, 1.51486, -0.159218, 3.86159e-06, -0.159218, -1.51486, -1.26414, 0.00396562, -0.0026294)
 
 [node name="Node3D" parent="." instance=ExtResource("3_as83t")]
 
@@ -33,3 +42,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.4361, 0.918661, 3.30574)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4962, 0.918661, 24.2783)
 
 [node name="Audio" parent="." instance=ExtResource("6_hkl6x")]
+
+[editable path="UI"]
+[editable path="PlayerAndCamera"]

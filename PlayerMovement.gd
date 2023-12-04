@@ -1,5 +1,6 @@
 extends RigidBody3D
 
+signal health_depleted
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,3 +16,7 @@ func _process(delta):
 	var direction = Vector3(left-right, 0, forward-backward)
 	direction = Quaternion.from_euler(Vector3(0,180,0)) * direction
 	apply_central_force(direction * 800 * delta)
+	
+	if position.y < -10:
+		emit_signal("health_depleted")
+
