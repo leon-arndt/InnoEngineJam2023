@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://k23r5wfgpdxb"]
+
+[sub_resource type="Environment" id="Environment_fwe42"]
+fog_density = 1.0
+
+[node name="WorldEnvironment" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fwe42")
