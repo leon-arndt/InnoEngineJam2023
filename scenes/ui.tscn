@@ -14,10 +14,12 @@ grow_vertical = 2
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" type="Control" parent="CanvasLayer"]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(4, 4)
 
 [node name="Hearts" type="TextureRect" parent="CanvasLayer/Control"]
 layout_mode = 0
@@ -29,6 +31,7 @@ expand_mode = 2
 stretch_mode = 1
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
+texture_filter = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -36,6 +39,7 @@ offset_left = -20.0
 offset_right = 20.0
 offset_bottom = 40.0
 grow_horizontal = 2
+scale = Vector2(4, 4)
 script = ExtResource("2_hbkjf")
 
 [node name="SecondsLeft" type="Label" parent="CanvasLayer/Panel"]
