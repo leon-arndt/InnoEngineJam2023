@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://doofxeioljq1u"]
+[gd_scene load_steps=6 format=3 uid="uid://doofxeioljq1u"]
 
 [ext_resource type="Script" path="res://PlayerMovement.gd" id="1_mam7h"]
+[ext_resource type="Script" path="res://FollowCamera.gd" id="2_5o42o"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elyos"]
 albedo_color = Color(0.376471, 0.992157, 0.905882, 1)
@@ -23,20 +24,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2496, -1.09818, -6.55748)
 use_collision = true
 size = Vector3(26.0422, 0.269043, 26.0144)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
+[node name="Player" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 linear_damp = 1.0
 script = ExtResource("1_mam7h")
 
-[node name="CSGSphere3D" type="CSGSphere3D" parent="RigidBody3D"]
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Player"]
 material_override = SubResource("StandardMaterial3D_ccvko")
 use_collision = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("SphereShape3D_i4vyp")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.883627, 0.468192, 0, -0.468192, 0.883627, 5.00111, 4.42407, 3.79149)
+transform = Transform3D(1, 0, 0, 0, 0.883627, 0.468192, 0, -0.468192, 0.883627, 0.306936, 4.42407, 3.79149)
+script = ExtResource("2_5o42o")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.761493, 0.648173, 0, -0.648173, 0.761493, -0.520785, 1.92182, 2.14922)

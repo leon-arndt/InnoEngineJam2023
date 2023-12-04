@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf3ycxp5q04g"]
+
+[ext_resource type="Script" path="res://PlayerMovement.gd" id="1_ns86o"]
+[ext_resource type="Script" path="res://FollowCamera.gd" id="2_vx0lq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ccvko"]
+albedo_color = Color(0.827451, 0, 0.00392157, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i4vyp"]
+
+[node name="PlayerAndCamera" type="Node"]
+
+[node name="Player" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+linear_damp = 1.0
+script = ExtResource("1_ns86o")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Player"]
+material_override = SubResource("StandardMaterial3D_ccvko")
+use_collision = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("SphereShape3D_i4vyp")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.883627, 0.468192, 0, -0.468192, 0.883627, 0.306936, 4.42407, 3.79149)
+script = ExtResource("2_vx0lq")
