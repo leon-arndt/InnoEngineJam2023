@@ -1,4 +1,4 @@
-extends CSGBox3D
+extends Area3D
 
 func _ready():
 	pass
@@ -7,6 +7,6 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_interact_radius_body_entered(body):
+func _on_body_entered(body):
 	print(body)
 	pass
