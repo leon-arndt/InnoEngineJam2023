@@ -727,1209 +727,1361 @@ transform = Transform3D(1.1307, 0, 0, 0, -7.64815e-08, -1.1307, 0, 1.74969, -4.9
 mesh = ExtResource("5_25mor")
 material = ExtResource("4_nq11s")
 
-[node name="BellScaffolding" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(1.76818, 0, 0, 0, 1.76818, 0, 0, 0, 1.76818, -75.4139, -75.5804, -53.2663)
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(1.76818, 0, 0, 0, 1.76818, 0, 0, 0, 1.76818, -120.143, -195.339, 26.4198)
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="BellScaffolding2" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(-7.72896e-08, 0, 1.76818, 0, 1.76818, 0, -1.76818, 0, -7.72896e-08, -93.2508, -194.85, -31.3029)
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(1.76818, 0, 0, 0, 1.76818, 0, 0, 0, 1.76818, -132.143, -195.339, 73.4198)
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding2"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D2"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="BellScaffolding3" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(1.76818, 0, 0, 0, 1.76818, 0, 0, 0, 1.76818, -108.82, -102.842, -4.08575)
+[node name="CSGCombiner3D3" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(-0.0597964, 0, 1.76717, 0, 1.76818, 0, -1.76717, 0, -0.0597964, -161.136, -115.126, 30.8447)
 
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
+mesh = ExtResource("7_n6078")
+material = ExtResource("4_nq11s")
+
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs21" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding6" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding7" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 6.43079)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs25" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 36.0734, 27.5281)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs22" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs23" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs26" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs27" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 22.6919)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs28" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 1, 0, 1, 0, -1, 0, -0.00186746, -4.26066, 71.5448, 12.3416)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs24" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 27.6348)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D3"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding3"]
-transform = Transform3D(0.0132199, 0, 1.31269, 0, 1.31276, 0, -1.31269, 0, 0.0132199, -3.40187, 79.4277, 17.4847)
+[node name="CSGCombiner3D4" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(-1.76786, 0, 0.0334817, 0, 1.76818, 0, -0.0334817, 0, -1.76786, 17.726, -287.021, -112.526)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="BellScaffolding5" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(1.76818, 0, 0, 0, 1.76818, 0, 0, 0, 1.76818, -108.82, -234.811, 32.3629)
-
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs21" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding6" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding7" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 6.43079)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs25" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 36.0734, 27.5281)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs22" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs23" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs26" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs27" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 22.6919)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs28" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 1, 0, 1, 0, -1, 0, -0.00186746, -4.26066, 71.5448, 12.3416)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs24" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 27.6348)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D4"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding5"]
-transform = Transform3D(0.0132199, 0, 1.31269, 0, 1.31276, 0, -1.31269, 0, 0.0132199, -3.40187, 79.4277, 17.4847)
+[node name="CSGCombiner3D5" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(-1.76786, 0, 0.0334817, 0, 1.76818, 0, -0.0334817, 0, -1.76786, 30.6138, -287.021, -159.29)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="BellScaffolding4" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(-7.72896e-08, 0, 1.76818, 0, 1.76818, 0, -1.76818, 0, -7.72896e-08, 31.7985, -170.494, -62.929)
-
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs21" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding6" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding7" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 6.43079)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs25" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 36.0734, 27.5281)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs22" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs23" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs26" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs27" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 22.6919)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs28" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 1, 0, 1, 0, -1, 0, -0.00186746, -4.26066, 71.5448, 12.3416)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs24" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 27.6348)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D5"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding4"]
-transform = Transform3D(0.0132199, 0, 1.31269, 0, 1.31276, 0, -1.31269, 0, 0.0132199, -3.40187, 79.4277, 17.4847)
+[node name="CSGCombiner3D6" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(0.0263231, 0, -1.76798, 0, 1.76818, 0, 1.76798, 0, 0.0263231, 58.7954, -206.808, -116.174)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="BellScaffolding6" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(-0.222102, 0, -1.75417, 0, 1.76818, 0, 1.75417, 0, -0.222102, 104.663, -201.365, -223.704)
-
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs21" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding6" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding7" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 6.43079)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs25" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 36.0734, 27.5281)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs22" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs23" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs26" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs27" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 22.6919)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs28" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 1, 0, 1, 0, -1, 0, -0.00186746, -4.26066, 71.5448, 12.3416)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs24" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 27.6348)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D6"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding6"]
-transform = Transform3D(0.0132199, 0, 1.31269, 0, 1.31276, 0, -1.31269, 0, 0.0132199, -3.40187, 79.4277, 17.4847)
+[node name="CSGCombiner3D7" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(-2.30134, 0, 0.0435852, 0, 2.30175, 0, -0.0435852, 0, -2.30134, -103.828, -332.596, -25.6318)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="BellScaffolding7" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(-0.222102, 0, -1.75417, 0, 1.76818, 0, 1.75417, 0, -0.222102, 68.5026, -333.335, -228.282)
-
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs21" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding6" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding7" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 6.43079)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs25" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 36.0734, 27.5281)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs22" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs23" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs26" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs27" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 22.6919)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs28" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 1, 0, 1, 0, -1, 0, -0.00186746, -4.26066, 71.5448, 12.3416)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs24" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 27.6348)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D7"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding7"]
-transform = Transform3D(0.0132199, 0, 1.31269, 0, 1.31276, 0, -1.31269, 0, 0.0132199, -3.40187, 79.4277, 17.4847)
+[node name="CSGCombiner3D8" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(-2.30134, 0, 0.0435852, 0, 2.30175, 0, -0.0435852, 0, -2.30134, -87.0511, -332.596, -86.5079)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
 
-[node name="BellScaffolding8" type="MeshInstance3D" parent="Backgronund"]
-transform = Transform3D(1.75417, 0, -0.222101, 0, 1.76818, 0, 0.222101, 0, 1.75417, 145.377, -269.017, -76.807)
-
-[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
 mesh = ExtResource("11_bykju")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
 mesh = ExtResource("12_8ra8b")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs21" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding6" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 27.2139)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding7" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 54.5679, 6.43079)
-mesh = ExtResource("11_bykju")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs25" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 36.0734, 27.5281)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs22" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 6.39602)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs23" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs26" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 16.808)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs27" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 71.5448, 22.6919)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs28" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 1, 0, 1, 0, -1, 0, -0.00186746, -4.26066, 71.5448, 12.3416)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs24" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(-0.00186746, 0, 0.999999, 0, 1, 0, -0.999999, 0, -0.00186746, -4.26066, 45.337, 27.6348)
-mesh = ExtResource("13_8db6y")
-material = SubResource("StandardMaterial3D_0qhxd")
-
-[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D8"]
 transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
 mesh = ExtResource("13_8db6y")
 material = SubResource("StandardMaterial3D_0qhxd")
 
-[node name="Bell2" type="CSGMesh3D" parent="Backgronund/BellScaffolding8"]
-transform = Transform3D(0.0132199, 0, 1.31269, 0, 1.31276, 0, -1.31269, 0, 0.0132199, -3.40187, 79.4277, 17.4847)
+[node name="CSGCombiner3D10" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(-0.00351812, 0, 1.76818, 0, 1.76818, 0, -1.76818, 0, -0.00351812, -13.5941, -162.523, 120.65)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
 mesh = ExtResource("7_n6078")
 material = ExtResource("4_nq11s")
+
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D10"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="CSGCombiner3D11" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(2.30059, 0, -0.0732634, 0, 2.30175, 0, 0.0732634, 0, 2.30059, 150.184, -288.311, 32.2129)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
+mesh = ExtResource("7_n6078")
+material = ExtResource("4_nq11s")
+
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D11"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="CSGCombiner3D12" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(2.30059, 0, -0.0732634, 0, 2.30175, 0, 0.0732634, 0, 2.30059, 132.623, -288.311, 92.8676)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
+mesh = ExtResource("7_n6078")
+material = ExtResource("4_nq11s")
+
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D12"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="CSGCombiner3D9" type="CSGCombiner3D" parent="Backgronund"]
+transform = Transform3D(0.0342665, 0, -2.3015, 0, 2.30175, 0, 2.3015, 0, 0.0342665, -50.3653, -228.177, -30.3805)
+
+[node name="Bell2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.600269, 43.8293, -5.13889)
+mesh = ExtResource("7_n6078")
+material = ExtResource("4_nq11s")
+
+[node name="Scaffolding2" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 0, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 16.8132, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding4" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 34.5538, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37555, 51.367, 6.0818)
+mesh = ExtResource("11_bykju")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs7" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29803, 0, 16.403)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs5" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.29803, 8.2561, 5.40682)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs6" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3958, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs8" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.35588, 0, 5.68583)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs3" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.27056, 9.06869, 16.403)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs9" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 0, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs10" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 8.2561, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs11" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 0, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs19" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 8.82118, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs12" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 0, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs13" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 9.06869, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs14" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79739, 17.8344, -5.37407)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs15" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(0.00186761, 0, -0.999998, 0, 1, 0, 0.999998, 0, 0.00186761, -5.19873, 26.0905, -5.35354)
+mesh = ExtResource("12_8ra8b")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs16" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.94045, 17.8344, -16.4518)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs20" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.26066, 36.0734, -5.36032)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs17" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, -4.91983, 17.8344, -5.41191)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
+
+[node name="Scaffolding-Stairs18" type="CSGMesh3D" parent="Backgronund/CSGCombiner3D9"]
+transform = Transform3D(-0.00186746, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.00186746, 5.79744, 26.9031, -5.3466)
+mesh = ExtResource("13_8db6y")
+material = SubResource("StandardMaterial3D_0qhxd")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.02828, 1.73296, 0.339215)
