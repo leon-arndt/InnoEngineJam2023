@@ -7,6 +7,9 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_body_entered(body):
-	print(body)
-	pass
+func _on_body_entered(body : Node3D):
+	if body.is_in_group("Player"):
+		finish_level()
+
+func finish_level():
+	print("you win!")

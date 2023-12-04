@@ -1940,3 +1940,5 @@ script = ExtResource("7_8em5t")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D/Area3D"]
 shape = SubResource("BoxShape3D_c548b")
+
+[connection signal="body_entered" from="CSGBox3D/Area3D" to="CSGBox3D/Area3D" method="_on_body_entered"]
