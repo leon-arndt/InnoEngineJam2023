@@ -1,31 +1,33 @@
-[gd_scene load_steps=14 format=3 uid="uid://ct328gcgjoe2w"]
+[gd_scene load_steps=15 format=3 uid="uid://ct328gcgjoe2w"]
 
 [ext_resource type="ArrayMesh" uid="uid://ddb2hhegmyp2t" path="res://Asset/MainCharacter.obj" id="1_3fl0h"]
 [ext_resource type="ArrayMesh" uid="uid://lrfr356geawg" path="res://Asset/MainCharacter__Eye.obj" id="2_3onf5"]
 [ext_resource type="ArrayMesh" uid="uid://bigwbii4u514p" path="res://Asset/MainCharacter__Gear.obj" id="3_5dhyc"]
+[ext_resource type="Material" uid="uid://cg44tfysdbcbw" path="res://Asset/Material/MainCharacterGear.tres" id="4_740gc"]
 
 [sub_resource type="Gradient" id="Gradient_tsdrk"]
 offsets = PackedFloat32Array(0, 0.00220752, 1)
 colors = PackedColorArray(0.131105, 0.222755, 0.36736, 1, 0.142745, 0.228232, 0.373709, 1, 0.884433, 0.577168, 0.778275, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_c7xgv"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6f45f"]
 gradient = SubResource("Gradient_tsdrk")
 fill_from = Vector2(1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4jx0"]
-albedo_texture = SubResource("GradientTexture2D_c7xgv")
+albedo_color = Color(0.6, 0.6, 0.6, 1)
+albedo_texture = SubResource("GradientTexture2D_6f45f")
 
 [sub_resource type="Gradient" id="Gradient_13n1p"]
 colors = PackedColorArray(0.256319, 0.119358, 0.399401, 1, 1, 0.600263, 0.598267, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_ivjk1"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3nnmu"]
 gradient = SubResource("Gradient_13n1p")
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tirh2"]
 albedo_color = Color(0.85098, 0.8, 0.627451, 1)
-albedo_texture = SubResource("GradientTexture2D_ivjk1")
+albedo_texture = SubResource("GradientTexture2D_3nnmu")
 metallic = 0.3
 metallic_specular = 0.27
 roughness = 0.51
@@ -37,6 +39,10 @@ albedo_color = Color(0.419608, 0.803922, 0.823529, 1)
 metallic = 0.4
 emission_enabled = true
 emission = Color(0, 0.721569, 0.733333, 1)
+
+[sub_resource type="Animation" id="Animation_8s2lg"]
+length = 0.001
+step = 0.0166667
 
 [sub_resource type="Animation" id="Animation_kjpqe"]
 resource_name = "new_animation"
@@ -66,9 +72,6 @@ tracks/1/keys = {
 "values": [Vector3(0, -3.14159, 0), Vector3(6.28319, -3.14159, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_8s2lg"]
-length = 0.001
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xmgmj"]
 _data = {
 "RESET": SubResource("Animation_8s2lg"),
@@ -78,7 +81,7 @@ _data = {
 [node name="MainCharacter" type="Node"]
 
 [node name="MainCharacter" type="CSGCombiner3D" parent="."]
-transform = Transform3D(0.418506, 0, 0, 0, 0.418506, 0, 0, 0, 0.418506, 0, 1.28516, 0)
+transform = Transform3D(0.356744, 0, 0, 0, 0.35479, -0.03729, 0, 0.03729, 0.35479, 0.00884414, 0.458094, 0.000115395)
 
 [node name="MainCharacter__Base" type="CSGMesh3D" parent="MainCharacter"]
 mesh = ExtResource("1_3fl0h")
@@ -89,13 +92,14 @@ mesh = ExtResource("2_3onf5")
 material = SubResource("StandardMaterial3D_tirh2")
 
 [node name="MainCharacter__Gear" type="CSGMesh3D" parent="MainCharacter"]
-transform = Transform3D(0.999998, 0.00170843, -0.00100533, -0.0017066, 0.999997, 0.00181586, 0.00100843, -0.00181414, 0.999998, 1.24113, 0.00396562, -0.0026294)
+transform = Transform3D(1.58056, 0, 0, 0, 1.58056, -7.05937e-06, 0, 7.05937e-06, 1.58056, 1.25779, 0.00396562, -0.0026294)
 mesh = ExtResource("3_5dhyc")
 material = SubResource("StandardMaterial3D_ckawv")
 
 [node name="MainCharacter__Gear2" type="CSGMesh3D" parent="MainCharacter"]
-transform = Transform3D(-1, 1.52855e-14, 8.74228e-08, 0, 1, -1.74846e-07, -8.74228e-08, -1.74846e-07, -1, -1.19209, 0.00396562, -0.0026294)
+transform = Transform3D(-1.5232, -1.72473e-11, -3.86159e-06, 0, 1.5232, -6.80319e-06, 3.86159e-06, -6.80319e-06, -1.5232, -1.26414, 0.00396562, -0.0026294)
 mesh = ExtResource("3_5dhyc")
+material = ExtResource("4_740gc")
 
 [node name="Spin" type="AnimationPlayer" parent="MainCharacter"]
 root_node = NodePath("../MainCharacter__Gear")
