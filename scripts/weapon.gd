@@ -39,6 +39,6 @@ func _input(event):
 
 func shoot(dir: Vector3):
 	var instance = bullet.instantiate() as RigidBody3D
-	instance.global_position = player.global_position
+	instance.global_position = global_position
 	instance.linear_velocity = dir
 	get_tree().root.add_child(instance)
