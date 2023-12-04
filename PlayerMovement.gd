@@ -16,7 +16,10 @@ func _process(delta):
 	var right = Input.get_action_strength("move_right")
 	var direction = Vector3(left-right, 0, forward-backward)
 	direction = Quaternion.from_euler(Vector3(0,180,0)) * direction
-	apply_central_force(direction * 800 * delta)
+	var control = 0.1
+	if get_contact_count() > 0:
+		control = 1.0
+	apply_central_force(direction * 800 * control * delta)
 	
 	if position.y < death_zone_y:
 		emit_signal("health_depleted")
